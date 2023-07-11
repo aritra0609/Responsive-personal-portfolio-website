@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="/CSSprojects/portfolio/logic.js"></script>
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <img style="position: absolute; top: 45px;right: 80px;margin: auto; padding:5px;" src="https://lh3.googleusercontent.com/ogw/AGvuzYYEenO3wc1u1m7TOtYDi70CGS8ylHdMtqTn5MrFmU8=s32-c-mo" alt="image-icon"/>
+  </header>
+
+  <div class="content" id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <p style="line-height:2;">Hi, my name is Aritra Ganguly.
+        I am a frontend developer with a passion for creating visually
+         appealing and user-friendly websites.<br>
+        Skilled in HTML, CSS, JavaScript and ReactJS, I strive to deliver 
+        exceptional user experiences through 
+        clean and responsive designs.<br>I am actively looking for internship opportunities.
+    </p>
+  </div>
+
+  <div class="content" id="about">
+    <h2>Education</h2>
+    <p>Class XII - Sri Aurobindo Vidyamandir,Chandernagore (2019 -'21) (95.6%)</p>
+    <p>B.Tech in Information Technology- University of Calcutta(2021 -'25)<br><br>
+       Grade- 8.95 SGPA (Semester-III)
+    </p>
+  </div>
+
+  <div class="content" id="skills">
+    <h2>Skills</h2>
+    <ul >
+      <li style="margin-bottom: 10px;">HTML5</li>
+      <li style="margin-bottom: 10px;">CSS3</li>
+      <li style="margin-bottom: 10px;">JavaScript</li>
+      <li style="margin-bottom: 10px;">Tailwind CSS</li>
+      <li style="margin-bottom: 10px;">JQuery</li> 
+      <li>React</li>
+    </ul>
+  </div>
+
+  <div class="content" id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>ReactJS- complete guide for frontend web development by Udemy<br><br>
+      (This is a 22 hours long course including HTML5, CSS3, Javascript, ES6, JQuery, ReactJS)</li>
+    </ul>
+    <a style="text-decoration: none;margin-left: 20px;" href="" alt="certificate">Click to see completion certificate</a>
+  </div>
+
+  <div class="content" id="project">
+    <h2>Projects</h2>
+    <p>Calculator Project using HTML, CSS, JS</p>
+    <a style="text-decoration: none;" href="https://aritra0609.github.io/Aritra-s-Calculator-using-HTML-CSS-JS/" alt="calculator">Click here to see the project</a>
+    <p>Personal Portfolio Website using HTML, CSS, JS</p>
+    <a style="text-decoration: none;" href="http://127.0.0.1:5500/CSSprojects/portfolio/index.html" alt="portfolio">Click here to see the project</a>
+ 
+  </div>
+
+  <div class="content" id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to me using the form below:</p>
+    <form >
+      <label class="contact-form" for="name">Name:</label>
+      <input class="contact-form" type="text" id="name" name="name" required><br>
+      <label class="contact-form" for="email">Email:</label>
+      <input class="contact-form" type="email" id="email" name="email" required><br>
+      <label id="message-label" for="message">Message:</label>
+      <textarea class="contact-form" id="message" name="message" rows="4" required></textarea><br>
+      <input style="margin-left: 1px; padding: 10px;" type="submit" value="Send Message">
+    </form>
+    <p>Contact: 9433336391</p>
+    <p>Email: aritraganguly2019@gmail.com</p>
+    <div class="imp-link">
+        <ul>
+          <li><a href="https://github.com/aritra0609" alt="Github">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/aritra-ganguly-5a210b224/" alt="LinkedIn">LinkedIn</a></li>
+        </ul>
+    </div>   
+  </div>
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+  </script>
+  <footer>
+    &copy; 2023 My Portfolio. All rights reserved.
+  </footer>
+</body>
+
+</html>
